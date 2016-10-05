@@ -47,6 +47,16 @@ class TestCars < MiniTest::Test
     assert_equal(85, @caroline.fuel)
   end
 
+  def test_brake_reduces_speed
+    @caroline.accelerate
+    assert_equal(15, @caroline.brake)
+  end
+
+  def test_brake_does_not_go_below_0
+    assert_equal(10, @ders.brake)
+  end
+
+
 
 
 

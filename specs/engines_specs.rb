@@ -11,9 +11,9 @@ class TestEngine < Minitest::Test
     @time_machine = Engine.new(5, -5)
   end
 
-  def test_get_engine_speed
-    assert_equal(10, @regular.speed)
-    assert_equal(5, @time_machine.speed)
+  def test_get_engine_acceleration
+    assert_equal(10, @regular.acceleration)
+    assert_equal(5, @time_machine.acceleration)
   end
 
   def test_get_fuel_intake

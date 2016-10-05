@@ -1,9 +1,9 @@
 class Engine
 
-attr_reader :speed, :fuel_use
+attr_reader :acceleration, :fuel_use
 
-  def initialize(speed, fuel_use)
-    @speed = speed
+  def initialize(acceleration, fuel_use)
+    @acceleration = acceleration
     @fuel_use = fuel_use
   end
 
